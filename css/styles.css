@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;    
+} 
+
+body a {
+    font-weight: bold;
+}
+
+nav {
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: #7d285e;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 10%;
+}
+
+nav li {
+    text-decoration: none;
+    justify-content: space-evenly;
+    padding: 2% 5%;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+}
+
+main {
+    margin: auto;
+    padding: 5% 15% 2%;
+    /* background-color: #c59fc991; */
+}
+
+main a {
+    color: #7d285e;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    margin: 20px 0px;
+}
+
+h1 {
+    color: #7d285e;
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #c62d3f;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #d57302;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    word-spacing: 0;
+}
+/* 
+    HOME PAGE 
+*/
+#subtitle {
+    color:#c62d3f;
+    margin-bottom: 1em;
+    margin-top: 0;
+    font-style: italic;
+    font-size: 2em;
+}
+#about {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    margin:4% 0%;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #7d285e;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    border-radius: 5px;
+}
+/*
+    PROJECTS PAGE
+*/
+.projects {
+    width: 100%;
+    height: 300px;
+    margin: 1% 0%;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    border:#7d285e solid 2px;
+    border-radius: 5px;
+}
+.projectImage {
+    padding-right: 2%;
+}
+.projects img
+{
+    width: 450px;
+    height: 300px;
+}
+.projectTitle {
+    padding-bottom: 10px;
+}
+.projectDescription {
+    margin-bottom: 10px;
+}
+.projectDetails a {
+    color: #d57302;
+    padding-right: 20px;
+}
+/* 
+    Project slideshow styling
+*/
+#slideshowContainer {
+    width: 100%;
+    height: 300px;
+    padding: 30px 50px;
+    position: relative;
+    display: flex;
+       
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+.prev, .next
+{
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    background-color: #7d285e;
+    color: white;
+    cursor: pointer;
+}
+
+#slideShowDetails {
+    padding: 0px 10px;
+}
+
+footer {
+    margin-top: 20%;
+    font-size: small;
+}
