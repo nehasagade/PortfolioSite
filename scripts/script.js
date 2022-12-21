@@ -4,7 +4,7 @@
 "use strict";
 
 // DISPLAY ALL PROJECTS
-let allProjects = document.getElementById("allProjects");
+// let allProjects = document.getElementById("allProjects");
 allProjects.addEventListener("DOMContentLoaded", showProjects());
 
 function showProjects(){
