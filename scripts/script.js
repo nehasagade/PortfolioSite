@@ -9,9 +9,9 @@ allProjects.addEventListener("DOMContentLoaded", showProjects());
 
 function showProjects(){
     //Populate an array with objects of the slideshow (my projects)
-    const beanSceneWeb = {name: "Bean Scene Bookings", image: "", description: "This web app was created using ASP .NET with Entity Framework and MVC architecture. Customers, staff, and managers of medium-sized restaurant Bean Scene can make and manage bookings.", alt: "Screenshot of Bean Scene homepage", githubLink: "", liveLink: ""};
+    const beanSceneWeb = {name: "Bean Scene Bookings", image: "BeanSceneApp.png", description: "This web app was created using ASP .NET with Entity Framework and MVC architecture. Customers, staff, and managers of medium-sized restaurant Bean Scene can make and manage bookings.", alt: "Screenshot of Bean Scene homepage", githubLink: "", liveLink: ""};
 
-    const beanSceneMobile = {name: "Bean Scene Ordering", image: "", description: "This mobile app was created using React Native, a C# Rest API, and a MongoDB. Staff, and managers of Bean Scene can make and manage orders.", alt: "Screenshot of Bean Scene mobile app", githubLink: "", liveLink: ""};
+    const beanSceneMobile = {name: "Bean Scene Ordering", image: "BeanSceneMobile.png", description: "This mobile app was created using React Native, a C# Rest API, and MongoDB. Staff, and managers of Bean Scene can make and manage orders.", alt: "Screenshot of Bean Scene mobile app", githubLink: "", liveLink: ""};
 
     const myPortfolio = {name:"My Portfolio", image: "MyPortfolio.png", description: "This website was created using HTML, CSS, and vanilla JavaScript.", alt:"Project Screenshot", githubLink: "https://github.com/nehasagade/PortfolioSite", liveLink: ""};
 

@@ -29,7 +29,7 @@ nav ul {
 nav li {
     text-decoration: none;
     justify-content: space-evenly;
-    padding: 2% 5%;
+    padding: 1% 5%;
 }
 
 nav a {
@@ -92,7 +92,7 @@ p {
 .socialMedia {
     width: 100%;
     height: 20%;
-    margin-top: 3%;
+    margin: 3% 0%;
    
 }
 .socialLinksList {
@@ -109,7 +109,7 @@ p {
 }
 .button {
     margin:4% 0%;
-    padding: 2%;
+    padding: 1%;
     width: fit-content;
     height: fit-content;
     background-color: #7d285e;
@@ -122,8 +122,6 @@ p {
     PROJECTS PAGE
 */
 .projects {
-    width: 100%;
-    height: 300px;
     margin: 1% 0%;
     display: flex;
     flex-direction: row;
@@ -136,8 +134,7 @@ p {
 }
 .projects img
 {
-    width: 450px;
-    height: 300px;
+    border-radius: 2px;
 }
 .projectTitle {
     padding-bottom: 10px;
