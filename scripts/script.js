@@ -8,14 +8,14 @@
 allProjects.addEventListener("DOMContentLoaded", showProjects());
 
 function showProjects(){
-    //Populate an array with objects of the slideshow (my projects)
-    const beanSceneWeb = {name: "Bean Scene Bookings", image: "BeanSceneApp.png", description: "This web app was created using ASP .NET with Entity Framework and MVC architecture. Customers, staff, and managers of medium-sized restaurant Bean Scene can make and manage bookings.", alt: "Screenshot of Bean Scene homepage", githubLink: "", liveLink: ""};
+    // Populate an array with objects of the slideshow (my projects)
+    const beanSceneWeb = {name: "Bean Scene Bookings", image: "BeanSceneApp.png", description: "This web app was created using ASP .NET with Entity Framework and MVC architecture. Customers, staff, and managers of medium-sized restaurant Bean Scene can make and manage bookings.", alt: "Screenshot of Bean Scene homepage", githubLink: "", liveLink: "", demoLink: "https://www.youtube.com/watch?v=241r4socUlc"};
 
-    const beanSceneMobile = {name: "Bean Scene Ordering", image: "BeanSceneMobile.png", description: "This mobile app was created using React Native, a C# Rest API, and MongoDB. Staff, and managers of Bean Scene can make and manage orders.", alt: "Screenshot of Bean Scene mobile app", githubLink: "", liveLink: ""};
+    const beanSceneMobile = {name: "Bean Scene Ordering", image: "BeanSceneMobile.png", description: "This mobile app was created using React Native, a C# Rest API, and MongoDB. Staff, and managers of Bean Scene can make and manage orders.", alt: "Screenshot of Bean Scene mobile app", githubLink: "", liveLink: "", demoLink: ""};
 
-    const myPortfolio = {name:"My Portfolio", image: "MyPortfolio.png", description: "This website was created using HTML, CSS, and vanilla JavaScript.", alt:"Project Screenshot", githubLink: "https://github.com/nehasagade/PortfolioSite", liveLink: ""};
+    const myPortfolio = {name:"My Portfolio", image: "MyPortfolio.png", description: "This website was created using HTML, CSS, and vanilla JavaScript.", alt:"Project Screenshot", githubLink: "https://github.com/nehasagade/PortfolioSite", liveLink: "", demoLink: ""};
 
-    const webDevNotes = {name: "Neha's Notes", image: "NehasNotes.png", description:"This was my first website that I created as part of Codecademy's Web Development course. It's a reference sheet for HTML and CSS, made with HTML and CSS.", alt: "Project Screenshot", githubLink: "https://github.com/nehasagade/nehasnotes", liveLink: ""};
+    const webDevNotes = {name: "Neha's Notes", image: "NehasNotes.png", description:"This was my first website that I created as part of Codecademy's Web Development course. It's a reference sheet for HTML and CSS, made with HTML and CSS.", alt: "Project Screenshot", githubLink: "https://github.com/nehasagade/nehasnotes", liveLink: "", demoLink: ""};
 
     const projects = [beanSceneWeb, beanSceneMobile, myPortfolio, webDevNotes];
 
@@ -61,6 +61,13 @@ function showProjects(){
             projectLiveLink.href = project.liveLink;
             projectLiveLink.textContent = "Live";
             projectDetailsDiv.appendChild(projectLiveLink);
+        }
+
+        if (project.demoLink.length > 0) {
+            let projectDemoLink = document.createElement("a");
+            projectDemoLink.href = project.demoLink;
+            projectDemoLink.textContent = "Video Demo";
+            projectDetailsDiv.appendChild(projectDemoLink);
         }
 
         projectsDiv.appendChild(projectDetailsDiv);
